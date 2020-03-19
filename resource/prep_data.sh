@@ -18,13 +18,17 @@ then
 fi
 
 
+# modification for Y Kogure WGS project
+# use gencode v19 !!
+# 
+
 # for GRCh37 (hg19)
 wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/refGene.txt.gz
-# wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/wgEncodeGencodeBasicV19.txt.gz 
-wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database/wgEncodeGencodeCompV31lift37.txt.gz
+wget http://hgdownload.cse.ucsc.edu/goldenPath/hg19/database/wgEncodeGencodeBasicV19.txt.gz 
+# wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database/wgEncodeGencodeCompV31lift37.txt.gz
 mv refGene.txt.gz ../annot_utils/data/hg19
-# mv wgEncodeGencodeBasicV19.txt.gz ../annot_utils/data/hg19
-mv wgEncodeGencodeCompV31lift37.txt.gz ../annot_utils/data/hg19
+mv wgEncodeGencodeBasicV19.txt.gz ../annot_utils/data/hg19
+# mv wgEncodeGencodeCompV31lift37.txt.gz ../annot_utils/data/hg19
 
 # for GRCh38 (hg38)
 wget http://hgdownload.cse.ucsc.edu/goldenPath/hg38/database/refGene.txt.gz

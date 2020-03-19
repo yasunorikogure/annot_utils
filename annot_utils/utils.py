@@ -11,8 +11,8 @@ def set_ucsc_gene_file(genome_id, gene_model):
         if gene_model == "refseq":
             ucsc_gene_file = pkg_resources.resource_filename("annot_utils", "data/hg19/refGene.txt.gz")
         elif gene_model == "gencode":
-            # ucsc_gene_file = pkg_resources.resource_filename("annot_utils", "data/hg19/wgEncodeGencodeBasicV19.txt.gz")
-            ucsc_gene_file = pkg_resources.resource_filename("annot_utils", "data/hg19/wgEncodeGencodeCompV31lift37.txt.gz")
+            ucsc_gene_file = pkg_resources.resource_filename("annot_utils", "data/hg19/wgEncodeGencodeBasicV19.txt.gz")
+            # ucsc_gene_file = pkg_resources.resource_filename("annot_utils", "data/hg19/wgEncodeGencodeCompV31lift37.txt.gz")
     elif genome_id == "hg38":
         if gene_model == "refseq":
             ucsc_gene_file = pkg_resources.resource_filename("annot_utils", "data/hg38/refGene.txt.gz")
