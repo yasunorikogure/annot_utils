@@ -24,9 +24,9 @@ RUN wget https://github.com/samtools/htslib/releases/download/1.9/htslib-1.9.tar
 RUN pip install --upgrade pip
 RUN pip install --upgrade setuptools
 
-RUN wget https://github.com/friend1ws/annot_utils/archive/v0.3.0.tar.gz && \
+RUN wget https://github.com/friend1ws/annot_utils2/archive/v0.3.0.tar.gz && \
     tar xzvf v0.3.0.tar.gz && \
-    cd annot_utils-0.3.0/resource && \
+    cd annot_utils2-0.3.0/resource && \
     bash prep_data.sh && \
     cd .. && \
     python setup.py build install

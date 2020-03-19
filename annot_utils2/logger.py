@@ -4,7 +4,7 @@ import logging
 
 def get_logger():
 
-    logger = logging.getLogger("annot_utils")
+    logger = logging.getLogger("annot_utils2")
     logger.propagate = False
  
     ch = logging.StreamHandler()

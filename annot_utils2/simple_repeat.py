@@ -12,11 +12,11 @@ def make_simple_repeat_info(output_file, genome_id, is_grc):
         ucsc2grc = chr_name.make_ucsc2grc(genome_id)
 
     if genome_id == "hg19":
-        simple_repeat_file = pkg_resources.resource_filename("annot_utils", "data/hg19/simpleRepeat.txt.gz")
+        simple_repeat_file = pkg_resources.resource_filename("annot_utils2", "data/hg19/simpleRepeat.txt.gz")
     elif genome_id == "hg38":
-        simple_repeat_file = pkg_resources.resource_filename("annot_utils", "data/hg38/simpleRepeat.txt.gz")
+        simple_repeat_file = pkg_resources.resource_filename("annot_utils2", "data/hg38/simpleRepeat.txt.gz")
     elif genome_id == "mm10":
-        simple_repeat_file = pkg_resources.resource_filename("annot_utils", "data/mm10/simpleRepeat.txt.gz")
+        simple_repeat_file = pkg_resources.resource_filename("annot_utils2", "data/mm10/simpleRepeat.txt.gz")
     else:
         print("genome_id shoud be hg19, hg38 or mm10", file =  sys.stderr)
         sys.exit(1)

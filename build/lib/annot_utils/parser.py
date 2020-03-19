@@ -1,12 +1,12 @@
 #! /usr/bin/env python
 
-from annot_utils.run import *
+from annot_utils2.run import *
 import argparse
 from .version import __version__
 
 def create_parser():
 
-    parser = argparse.ArgumentParser(prog = "annot_utils")
+    parser = argparse.ArgumentParser(prog = "annot_utils2")
 
     parser.add_argument("--version", action = "version", version = "%(prog)s " + __version__)
 

@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 def get_version():
-    with open(path.join(here, "annot_utils/version.py"), encoding = 'utf-8') as hin:
+    with open(path.join(here, "annot_utils2/version.py"), encoding = 'utf-8') as hin:
         for line in hin:
             if line.startswith("__version__"):
                 version = line.partition('=')[2]
@@ -18,12 +18,12 @@ def get_version():
     raise ValueError('Could not find version.')
 
 setup(
-    name = 'annot_utils',
+    name = 'annot_utils2',
     version = get_version(),
     description='Python programs for processing gene annotation files',
     long_description=long_description, 
     long_description_content_type='text/markdown',  
-    url = 'https://github.com/friend1ws/annot_utils',
+    url = 'https://github.com/friend1ws/annot_utils2',
     author = 'Yuichi Shiraishi',
     author_email = 'friend1ws@gamil.com',
     license = 'GPLv3',
@@ -40,10 +40,10 @@ setup(
     ],
 
     packages = find_packages(exclude = ['resource']),
-    package_data={'annot_utils': ['data/*/*']},
+    package_data={'annot_utils2': ['data/*/*']},
 
     install_requires = [],
-    entry_points = {'console_scripts': ['annot_utils = annot_utils:main']}
+    entry_points = {'console_scripts': ['annot_utils2 = annot_utils2:main']}
 
 )
 

@@ -1,3 +1,0 @@
-[console_scripts]
-annot_utils = annot_utils:main
-
