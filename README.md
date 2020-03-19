@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/friend1ws/annot_utils2.svg?branch=master)](https://travis-ci.org/friend1ws/annot_utils2)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![PyPI](https://img.shields.io/pypi/v/annot-utils.svg?)](https://pypi.python.org/pypi/annot-utils)
+[![PyPI](https://img.shields.io/pypi/v/annot-utils2.svg?)](https://pypi.python.org/pypi/annot-utils2)
 
 ## Introduction
 `annot_utils2` is a software for generating tabix-indexed annotation files, which can be shared by other softwares by Y.S.
