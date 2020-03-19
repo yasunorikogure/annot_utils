@@ -4,3 +4,4 @@
 *.egg-info
 lib*
 annot_utils2/data/*
+dist*
