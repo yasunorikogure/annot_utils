@@ -4,9 +4,12 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![PyPI](https://img.shields.io/pypi/v/annot-utils2.svg?)](https://pypi.python.org/pypi/annot-utils2)
 
+
 ## Introduction
-`annot_utils2` is a software for generating tabix-indexed annotation files, which can be shared by other softwares by Y.S.
-Currently, this software support only annotatioin files for hg19 (GRCh37), hg38 (GRCh38) and mm10 (GRCm38).
+`annot_utils2` is yet another annot_utils (software for generating tabix-indexed annotation files, which can be shared by other softwares by yuichi shiraishi)
+
+- Gencode dabase is fixed to Gencode19.
+- Annotation style is updated
 
 ## Dependency
 
