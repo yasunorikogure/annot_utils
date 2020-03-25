@@ -42,7 +42,10 @@ def make_gene_info(output_file, gene_model, genome_id, is_grc, add_ref_id):
                 else:
                     gene_print_name = symbol
             elif gene_model == "gencode":
-                gene_print_name = gene_id
+                if add_ref_id:
+                    gene_print_name = symbol + '(' + gene_id + ')'
+                else:
+                    gene_print_name = symbol
             else:
                 print("the value of gene_model should be refseq or gencode", file = sys.stderr)
                 sys.exit(1)
